@@ -14,6 +14,13 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/mlaves/curac_utils",
     packages=setuptools.find_packages(),
+    install_requires=[
+              'numpy',
+              'torch',
+              'progressbar',
+              'tqdm',
+              'urllib'
+          ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
