@@ -13,11 +13,11 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/mlaves/curac_utils",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages('curac_utils'),
     install_requires=[
               'numpy>=1.16.4',
               'torch>=1.4.0',
-              'progressbar>=2.4',
+              'progressbar>=2.5',
               'tqdm>=4.32.1'
           ],
     classifiers=[
