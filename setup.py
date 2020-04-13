@@ -1,6 +1,5 @@
 import setuptools
-
-__version__ == '0.0.2'
+from curac_utils._version import __version__
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
