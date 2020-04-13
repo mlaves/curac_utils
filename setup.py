@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="curac_util-pkg-max0r",
+    name="curac_utils-pkg-max0r",
     version=__version__,
     author="Max-Heinrich Laves",
     author_email="author@example.com",
@@ -13,7 +13,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/mlaves/curac_utils",
-    packages=setuptools.find_packages('curac_utils'),
+    packages=setuptools.find_packages(),
     install_requires=[
               'numpy>=1.16.4',
               'torch>=1.4.0',
