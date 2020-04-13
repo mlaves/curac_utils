@@ -1,5 +1,6 @@
 import setuptools
-from curac_utils import __version__
+
+__version__ == '0.0.2'
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -13,12 +14,12 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/mlaves/curac_utils",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages('curac_utils'),
     install_requires=[
-              'numpy',
-              'torch',
-              'progressbar',
-              'tqdm'
+              'numpy>=1.16.4',
+              'torch>=1.4.0',
+              'progressbar>=2.4',
+              'tqdm>=4.32.1'
           ],
     classifiers=[
         "Programming Language :: Python :: 3",
