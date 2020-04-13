@@ -18,8 +18,7 @@ setuptools.setup(
               'numpy',
               'torch',
               'progressbar',
-              'tqdm',
-              'urllib'
+              'tqdm'
           ],
     classifiers=[
         "Programming Language :: Python :: 3",
