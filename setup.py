@@ -23,7 +23,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="curac_utils-pkg-max0r",
-    version=get_version("curac_utils/__init__.py"),
+    version=get_version("curac_utils/_version.py"),
     author="Max-Heinrich Laves",
     author_email="author@example.com",
     description="A helper package for CURAC lecture.",
@@ -35,7 +35,10 @@ setuptools.setup(
               'numpy>=1.16.4',
               'torch>=1.4.0',
               'progressbar>=2.5',
-              'tqdm>=4.32.1'
+              'tqdm>=4.32.1',
+              'skimage>=0.15.0',
+              'matplotlib>=3.1.0',
+              'scipy>=1.3.0',
           ],
     classifiers=[
         "Programming Language :: Python :: 3",
