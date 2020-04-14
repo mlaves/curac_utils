@@ -36,7 +36,7 @@ setuptools.setup(
               'torch>=1.4.0',
               'progressbar>=2.5',
               'tqdm>=4.32.1',
-              'skimage>=0.15.0',
+              'scikit-image>=0.15.0',
               'matplotlib>=3.1.0',
               'scipy>=1.3.0',
           ],
