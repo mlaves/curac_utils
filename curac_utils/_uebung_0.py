@@ -38,4 +38,4 @@ class Uebung_0():
         :return: True wenn die Aufgabe korrekt gelöst wurde, ansonsten False
         """
 
-        return np.allclose(input_img, invert(UebungZ.aufg_2_get_ct()))
+        return np.allclose(input_img, invert(Uebung_0.aufg_2_get_ct()))
