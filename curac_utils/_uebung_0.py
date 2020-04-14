@@ -6,7 +6,7 @@ from skimage.util import invert
 import numpy as np
 
 
-class UebungZ():
+class Uebung_0():
     
     @staticmethod
     def aufg_1():
