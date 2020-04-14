@@ -2,22 +2,25 @@
 
 import urllib.request
 from skimage import io, img_as_float
+from skimage.util import invert
+import numpy as np
 
 
 class UebungZ():
     
     @staticmethod
-    def aufgabe_1():
+    def aufg_1():
         """
         Diese Funktion gibt das Ergebnis der Aufgabe 1 aus.
         """
         print("Herzlichen Glückwunsch! Du hast Aufgabe 1 der Zusatzübung erfolgreich abgeschlossen.")
 
     @staticmethod
-    def aufgabe_2():
+    def aufg_2_get_ct():
         """
         Diese Funktion lädt ein CT-Scan von https://commons.wikimedia.org/wiki/File:Renal_cyst_MRI.jpg herunter
         und gibt diesen als Numpy Array zurück.
+
         :return: CT-Scan als Numpy array
         """
 
@@ -25,3 +28,14 @@ class UebungZ():
                                    "480px-Renal_cyst_MRI.jpg")
 
         return img_as_float(io.imread("480px-Renal_cyst_MRI.jpg", as_gray=True))
+
+    @staticmethod
+    def aufg_2_test(input_img):
+        """
+        Diese Funktion testet, ob Aufgabe 2 korrekt gelöst wurde. Als Parameter erwartet sie den invertierten CT-Scan.
+
+        :param input_img: Numpy Array des invertierten CT-Scans
+        :return: True wenn die Aufgabe korrekt gelöst wurde, ansonsten False
+        """
+
+        return np.allclose(input_img, invert(UebungZ.aufg_2_get_ct()))
