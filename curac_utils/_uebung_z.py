@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import urllib.request
-from skimage import io
+from skimage import io, img_as_float
 
 
 class UebungZ():
@@ -24,4 +24,4 @@ class UebungZ():
         urllib.request.urlretrieve("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Renal_cyst_MRI.jpg/480px-Renal_cyst_MRI.jpg",
                                    "480px-Renal_cyst_MRI.jpg")
 
-        return io.imread("480px-Renal_cyst_MRI.jpg", as_gray=True)
+        return img_as_float(io.imread("480px-Renal_cyst_MRI.jpg", as_gray=True))
