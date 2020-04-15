@@ -33,12 +33,12 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
               'numpy>=1.16.4',
-              'torch>=1.4.0',
               'progressbar>=2.5',
               'tqdm>=4.32.1',
               'scikit-image>=0.15.0',
               'matplotlib>=3.1.0',
               'scipy>=1.3.0',
+              # 'torch>=1.4.0',
           ],
     classifiers=[
         "Programming Language :: Python :: 3",
