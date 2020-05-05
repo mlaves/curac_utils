@@ -33,7 +33,7 @@ class Uebung_2():
         :return: uint16 ndarray
         """
 
-        img_path = pkg_resources.resource_filename('curac_utils', 'data/a2gray.tiff')
+        img_path = pkg_resources.resource_filename(__name__, 'data/a2gray.tiff')
         img = img_as_uint(io.imread(img_path))
 
         return img

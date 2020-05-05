@@ -1,1 +1,2 @@
-include data/a2gray.tiff
+include README.md
+include curac_utils/data/a2gray.tiff
