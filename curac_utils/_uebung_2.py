@@ -32,6 +32,6 @@ class Uebung_2():
         :return: uint16 ndarray
         """
 
-        img = img_as_uint(io.imread('data/a2gray.tiff'))
+        img = img_as_uint(io.imread('a2gray.tiff'))
 
         return img
