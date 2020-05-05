@@ -31,6 +31,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/mlaves/curac_utils",
     packages=setuptools.find_packages(),
+    include_package_data=True,
     install_requires=[
               'numpy>=1.16.4',
               'progressbar>=2.5',

@@ -6,8 +6,9 @@ from skimage.util import invert
 import numpy as np
 
 
+
 class Uebung_0():
-    
+
     @staticmethod
     def aufg_1():
         """
@@ -24,8 +25,9 @@ class Uebung_0():
         :return: CT-Scan als Numpy array
         """
 
-        urllib.request.urlretrieve("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Renal_cyst_MRI.jpg/480px-Renal_cyst_MRI.jpg",
-                                   "480px-Renal_cyst_MRI.jpg")
+        urllib.request.urlretrieve(
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Renal_cyst_MRI.jpg/480px-Renal_cyst_MRI.jpg",
+            "480px-Renal_cyst_MRI.jpg")
 
         return img_as_float(io.imread("480px-Renal_cyst_MRI.jpg", as_gray=True))
 
