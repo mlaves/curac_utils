@@ -3,6 +3,7 @@
 import urllib.request
 from skimage import io, img_as_ubyte, img_as_uint
 import numpy as np
+import pkg_resources
 
 
 class Uebung_2():
@@ -32,6 +33,7 @@ class Uebung_2():
         :return: uint16 ndarray
         """
 
-        img = img_as_uint(io.imread('a2gray.tiff'))
+        img_path = pkg_resources.resource_filename('curac_utils', 'data/a2gray.tiff')
+        img = img_as_uint(io.imread(img_path))
 
         return img
