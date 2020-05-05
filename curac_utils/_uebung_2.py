@@ -19,7 +19,7 @@ class Uebung_2():
         """
 
         urllib.request.urlretrieve(
-            "https://upload.wikimedia.org/wikipedia/commons/d/d7/Histo_Lungenpest.jpg")
+            "https://upload.wikimedia.org/wikipedia/commons/d/d7/Histo_Lungenpest.jpg", "Histo_Lungenpest.jpg")
 
         img = img_as_ubyte(io.imread("Histo_Lungenpest.jpg", as_gray=False))
 
