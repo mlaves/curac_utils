@@ -70,6 +70,30 @@ class Uebung_4():
         return ct_g, mrt_g
 
     @staticmethod
+    def aufg_3_get_imgs():
+        x_1 = np.array([
+            [2,2,7,7,7,3,3],
+            [2,2,2,2,2,2,2],
+            [1,1,1,2,3,3,3],
+            [6,4,7,3,4,5,5],
+            [6,6,6,4,4,2,2],
+            [6,6,6,4,4,2,2],
+            [6,6,6,4,4,2,2]
+        ])
+
+        x_2 = np.array([
+            [4,4,8,8,8,5,5],
+            [4,4,4,4,4,4,4],
+            [1,1,1,4,5,5,5],
+            [2,4,8,3,4,6,6],
+            [2,2,2,4,4,4,4],
+            [2,2,2,4,4,4,4],
+            [2,2,2,4,4,4,4],
+        ])
+
+        return x_1, x_2
+
+    @staticmethod
     def aufg_4_d_get_pointclouds():
 
         pc1_path = pkg_resources.resource_filename(__name__, 'data/pointcloud1.xyz1')
