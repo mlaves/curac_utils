@@ -94,7 +94,7 @@ class Uebung_4():
         return x_1, x_2
 
     @staticmethod
-    def aufg_4_d_get_pointclouds():
+    def aufg_4_get_pointclouds():
 
         pc1_path = pkg_resources.resource_filename(__name__, 'data/pointcloud1.xyz1')
         pc2_path = pkg_resources.resource_filename(__name__, 'data/pointcloud2.xyz1')
@@ -103,3 +103,15 @@ class Uebung_4():
         pc2 = np.loadtxt(pc2_path)
 
         return pc1, pc2
+
+    @staticmethod
+    def plot_pointcloud(*list_of_pointclouds):
+        from mpl_toolkits import mplot3d
+        import matplotlib.pyplot as plt
+
+        fig = plt.figure()
+        ax = plt.axes(projection="3d")
+        for pc in list_of_pointclouds:
+            ax.plot(pc[:, 0], pc[:, 1], pc[:, 2], '.', markersize=3)
+
+        return fig, ax
